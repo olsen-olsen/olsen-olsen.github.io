@@ -1,16 +1,863 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Olsen Olsen</title>
-  </head>
-  <body>
-    <h1>hello</h1>
-    <div>
-      <div>
-        space1
-        
-      </div>
-    </div>
-  </body>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-02-25 Thu 03:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Olsen Olsen</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Olsen Olsen</h1>
+
+
+<div id="outline-container-orgaa437a9" class="outline-2">
+<h2 id="orgaa437a9">OLSEN OLSEN</h2>
+<div class="outline-text-2" id="text-orgaa437a9">
+</div>
+<div id="outline-container-orgf49d075" class="outline-3">
+<h3 id="orgf49d075">Matseðill á íslensku</h3>
+<div class="outline-text-3" id="text-orgf49d075">
+</div>
+<div id="outline-container-org9f24eb3" class="outline-4">
+<h4 id="org9f24eb3">Hamborgarar</h4>
+<div class="outline-text-4" id="text-org9f24eb3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Ostbogari</td>
+<td class="org-left">140gr. hamborgarakjöt, káli, gúrku, tómötum, spes sósu</td>
+<td class="org-left">1.030 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">BBQ borgari</td>
+<td class="org-left">140gr. hamborgarakjöt, káli, tómötum, gúrku, BBQ sósu, spes sósu</td>
+<td class="org-left">1.030 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Beikon borgari</td>
+<td class="org-left">140gr. hamborgarakjöt, káli, gúrku, tómötum, spes sósu</td>
+<td class="org-left">1.240 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">BeikonEgg borgari</td>
+<td class="org-left">140gr. beikon borgari með eggi</td>
+<td class="org-left">1.450 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsenborgari</td>
+<td class="org-left">140gr. hamborgarakjöt, með káli, tómötum og gúrku, beikon, skinku, tvöfaldan ost og spes sósu</td>
+<td class="org-left">1.450 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Gæða Fiskborgari</td>
+<td class="org-left">Silungur, þorskur, rækjur, ostur, kál, gúrku, tómötum, olsen sósu, frönskum og kokteilsósu</td>
+<td class="org-left">2.290 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Kjúklingaborgari</td>
+<td class="org-left">Íslensku kjúklingaborgari í kryddhjúp er einfaldan sá besti, káli, gúrku, tómötum og olsen sósu</td>
+<td class="org-left">1.285 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Kjúklingaborgari Southern Fried</td>
+<td class="org-left">Heilan bringu í kryddhjúp, káli, gúrku, tómötum og olsen sósu</td>
+<td class="org-left">1.195 kr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org5a1ef4a" class="outline-4">
+<h4 id="org5a1ef4a">Stórborgarar</h4>
+<div class="outline-text-4" id="text-org5a1ef4a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Jumpin Jack</td>
+<td class="org-left">175gr. ostborgari með miklu beikon, tvöfaldan ostur, grænmeti, olsen sósu, frönskum og kokteilsósu</td>
+<td class="org-left">2.560 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Sticky Fingers</td>
+<td class="org-left">175gr. ostborgari, smjörsteiktir sveppum, beikon, tvöföldum skammti af osti, sveitafrönskum, kál, tómötum, gúrku og heimagerð bearnise sósu</td>
+<td class="org-left">3.060 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Route 66</td>
+<td class="org-left">175gr. ostborgari með helling af fínsöxuðum lauk og papriku, bananapipar, tvöföldum osti, káli, gúrku og tómötum , frönsku sinnepi, tómatsósu og frönkum kartöflum og kokteilsósu</td>
+<td class="org-left">2.560 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Country Honk</td>
+<td class="org-left">Tvöfaldur borgari, tvisvar sinnum 140gr. með gráðosti, smjörsteiktir sveppum, beikon, tvöföldum osti, rauðlaukssultu, káli, tómötum og gúrku, olsen sósu og franskar að eigin vali</td>
+<td class="org-left">3.060 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Rock Off</td>
+<td class="org-left">175gr. ostborgari með beikonsultu, tvöföldum osti, grænmeti, olsen sósu, heimalagað chillimajó og franskar</td>
+<td class="org-left">2.730 kr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org48747ea" class="outline-4">
+<h4 id="org48747ea">Olsen Bátar</h4>
+<div class="outline-text-4" id="text-org48747ea">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Olsen Olsen</td>
+<td class="org-left">Grillaðri pylsu, bökuðum baunum og beikon</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Heilsu Olsen</td>
+<td class="org-left">Svissaður lauk með sveppum, papriku og maís, kál, gúrku og tómötum og bræddum osti</td>
+<td class="org-left">1.185 kr</td>
+<td class="org-left">1.495 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Snati Olsen</td>
+<td class="org-left">Chilli nautahakk með pylsu og beikon</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Philadephia Olsen</td>
+<td class="org-left">Þunnt sneiddu nautakjöt, svissuðum lauk, bræddum osti, asíum, steiktum lauk og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Sjávarrétta Olsen</td>
+<td class="org-left">Djúpsteiktum þorski, svissuðum lauk með rauðum papriku og tómötum, káli og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Rifja Olsen</td>
+<td class="org-left">Mjúkar svínakjötsneiðar með rauðkáli, súrum gúrkum, steiktum lauk og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Rækju Olsen</td>
+<td class="org-left">Ljúffengar þunnar skinkusneiðar, ostur, rækjur, káli, rauður papriku, agúrka, tómatar og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Beikon Olsen</td>
+<td class="org-left">Ljúffengar þunnar skinkusneiðar, ostur, beikon, kál, papprika, agúrka, tómatar og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Lamba Olsen</td>
+<td class="org-left">Ljúffengt lambakjöt, rauðkál, steiktur laukur, asíur og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Kjúklinga Olsen</td>
+<td class="org-left">Kjúklingakurl, maís, kál, sætt sinnep og spes sósa</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Grettir Sterki Olsen</td>
+<td class="org-left">Nautahakk með nýrnabaunum, svissaður laukur, heimagerð chillisósa og spes sósa</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsen Kafari</td>
+<td class="org-left">Mjúkir svínakjötsbitar, maís, BBQ kryddsmjör, kál, spes sósa</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Skinku Olsen</td>
+<td class="org-left">Skinku, bræddum osti, tómötum, káli, rauður papriku, agúrkum og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsen Spes</td>
+<td class="org-left">Skinku, bræddum osti, roast beef, káli, agúrku og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsen Þrenna</td>
+<td class="org-left">Skinku, bræddum osti, kjúklingakurl, káli og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsen Dúndur</td>
+<td class="org-left">Sælkera lambakjöt, beikon, gular baunir, og spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsen Hraðlestin</td>
+<td class="org-left">nautastrimpla, kjúklingabringa, svissaður laukur, sveppir, papprika, kál og spes sósu</td>
+<td class="org-left">1.495 kr</td>
+<td class="org-left">2.095 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Salsa Olsen</td>
+<td class="org-left">Kjúklingabringa, kál, tómatar, salsa sósu, sýrður rjómi, bræddur ostur og spes sósu</td>
+<td class="org-left">1.495 kr</td>
+<td class="org-left">2.095 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Pizza Olsen</td>
+<td class="org-left">brúnaðir sveppir, laukur, pepperoni, beikon, ostur, pizzasósa, Olsen sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Olsen Hard Rock</td>
+<td class="org-left">Rifið svínakjöt í BBQ sósu (Pulled Pork) með beikoni, osti, káli, spes sósu</td>
+<td class="org-left">1.295 kr</td>
+<td class="org-left">1.840 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Búkollu Olsen</td>
+<td class="org-left">Nautastrimplar, sveppir, bernaisesósa, franskar og bræddur ostur</td>
+<td class="org-left">1.595 kr</td>
+<td class="org-left">2.240 kr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org79dce38" class="outline-4">
+<h4 id="org79dce38">Samlokur</h4>
+<div class="outline-text-4" id="text-org79dce38">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Samloka</td>
+<td class="org-left">Grilluð með smjör, skinku og osti</td>
+<td class="org-left">680 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Kjúklingasamloka</td>
+<td class="org-left">Steiktar kjúklingabringur í kryddsmjör, kál, tómatar, spes sósa borið fram með frönskum og kokteilsósu</td>
+<td class="org-left">2.270 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">BBQ Kjúklingasamloka</td>
+<td class="org-left">Steiktar kjúklingabringur í BBQ kryddsmjör, kál, tómatar, spes sósa borið fram með frönskum og kokteilsósu</td>
+<td class="org-left">2.270 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Klúbbasamloka</td>
+<td class="org-left">Skinku, beikon, tómötum, káli, bræddum osti, spes sósu og frönskum og kokteilsósu</td>
+<td class="org-left">2.060 kr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org545c156" class="outline-4">
+<h4 id="org545c156">Brunch</h4>
+<div class="outline-text-4" id="text-org545c156">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Beikon og egg</td>
+<td class="org-left">beikon, skinka, egg, ristað brauð, bakaðar baunir</td>
+<td class="org-left">1.840 kr</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Eggjakaka</td>
+<td class="org-left">eggjakaka með þremum áleggstegundum að eigin vali á fersku salati dagsins með dressingu</td>
+<td class="org-left">1.350 kr</td>
+<td class="org-left">1.770 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Kjúklingalundir</td>
+<td class="org-left">kjúklingalundir í kryddhjúp sætri chillisósu og 1/4 krullur</td>
+<td class="org-left">1.960 kr</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org9e22c45" class="outline-4">
+<h4 id="org9e22c45">Salat</h4>
+</div>
+<div id="outline-container-orgc56389c" class="outline-4">
+<h4 id="orgc56389c">Barnamatseðill</h4>
+</div>
+<div id="outline-container-org64c27b6" class="outline-4">
+<h4 id="org64c27b6">Meðlæti</h4>
+<div class="outline-text-4" id="text-org64c27b6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Franskar lítill skammtur</th>
+<th scope="col" class="org-left">720 kr</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Franskar stór skammtur</th>
+<th scope="col" class="org-left">1.145 kr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Krullu franskar 1/4</td>
+<td class="org-left">670 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Krullu franskar 1/2</td>
+<td class="org-left">1.070 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Krullu franskar 1/1</td>
+<td class="org-left">1.395 kr</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Sveita franskar lítill skammtur</td>
+<td class="org-left">660 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Sveita frasnkar miðstærð</td>
+<td class="org-left">1.070 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Sveita franskar stór skammtur</td>
+<td class="org-left">1.395 kr</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Sætar kartöflufranskar 1/4</td>
+<td class="org-left">565 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Sætar kartöflufranskar 1/2</td>
+<td class="org-left">860 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Sætar kartöflufranskar 1/1</td>
+<td class="org-left">1.195 kr</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Laukhringir 1/2 skammtur</td>
+<td class="org-left">620 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Laukhringir 1/1 skammtur</td>
+<td class="org-left">940 kr</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Ostastangir 8stk</td>
+<td class="org-left">1.140 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Jalapeno ostabombur með nachos og salsa sósa</td>
+<td class="org-left">1.395 kr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org813e94f" class="outline-4">
+<h4 id="org813e94f">Sósur</h4>
+<div class="outline-text-4" id="text-org813e94f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">BBQ sósu</td>
+<td class="org-left">150 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Ranch sósa</td>
+<td class="org-left">155 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Chilli mayó</td>
+<td class="org-left">165 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Kokteilsósu</td>
+<td class="org-left">240 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Caesar dressing</td>
+<td class="org-left">255 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Bernaise sósa</td>
+<td class="org-left">330 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Heimagerð chilli sósa (mjör lítið magn)</td>
+<td class="org-left">350 kr</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Fríar sósur eru Olsen sósa, honey mustard, tómatchutney, tómatsósu, red hot wings sósa, tabasco sósa.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb7fe7f4" class="outline-3">
+<h3 id="orgb7fe7f4">Menu in english</h3>
+<div class="outline-text-3" id="text-orgb7fe7f4">
+</div>
+<div id="outline-container-org38e3c73" class="outline-4">
+<h4 id="org38e3c73">Hamburger</h4>
+</div>
+<div id="outline-container-org182967e" class="outline-4">
+<h4 id="org182967e">Big juices burgers</h4>
+</div>
+<div id="outline-container-orgdceba29" class="outline-4">
+<h4 id="orgdceba29">Olsen Hoagies</h4>
+</div>
+<div id="outline-container-org1882aac" class="outline-4">
+<h4 id="org1882aac">Sanwich</h4>
+</div>
+<div id="outline-container-orgd98faa4" class="outline-4">
+<h4 id="orgd98faa4">Brunch</h4>
+</div>
+<div id="outline-container-org48e4752" class="outline-4">
+<h4 id="org48e4752">Salat</h4>
+</div>
+<div id="outline-container-orgc7ee348" class="outline-4">
+<h4 id="orgc7ee348">Kidsmenu</h4>
+</div>
+<div id="outline-container-org2e93dea" class="outline-4">
+<h4 id="org2e93dea">Sideorders</h4>
+</div>
+<div id="outline-container-org393c85e" class="outline-4">
+<h4 id="org393c85e">Sauces</h4>
+</div>
+</div>
+<div id="outline-container-org3734773" class="outline-3">
+<h3 id="org3734773">Máltíð og Tilboð</h3>
+<div class="outline-text-3" id="text-org3734773">
+</div>
+<div id="outline-container-org7786de1" class="outline-4">
+<h4 id="org7786de1">Hamborgarar</h4>
+<div class="outline-text-4" id="text-org7786de1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Kjúklingaborgarar máltíð</td>
+<td class="org-left">Kjúklingaborgari í kryddhjúp bringa, gos, franskar og kokteilsósu</td>
+<td class="org-left">2.285 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Ostborgaratilboð</td>
+<td class="org-left">140gr. Eldsteiktur ostborgari með frönskum kokteilsósu og gos</td>
+<td class="org-left">1.890 kr</td>
+</tr>
+
+<tr>
+<td class="org-left">Beikonborgaratilboð</td>
+<td class="org-left">140gr. Eldsteiktur beikonborgari með frönskum kokteilsósu og gos</td>
+<td class="org-left">2.250 kr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org1251ccd" class="outline-4">
+<h4 id="org1251ccd">Báturtilboð</h4>
+<div class="outline-text-4" id="text-org1251ccd">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Hádegis tilboð</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgcbb36b1" class="outline-4">
+<h4 id="orgcbb36b1">Ensku</h4>
+<div class="outline-text-4" id="text-orgcbb36b1">
+</div>
+<ul class="org-ul">
+<li><a id="org563390e"></a>Hambugers<br /></li>
+<li><a id="org266123b"></a>Big burgers<br /></li>
+<li><a id="orgbe218fe"></a>Meal<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
