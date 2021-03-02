@@ -1,4 +1,6 @@
 {
+  "name": "vefsidu",
+  "version": "1.0.0",
   "dependencies": {
     "browser-sync": "^2.26.14",
     "sass": "^1.32.8"
