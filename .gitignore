@@ -3,7 +3,3 @@ node_modules/
 
 # all stuff
 menu/
-
-# others files
-.DS_Store
-.stylelintrc.json
