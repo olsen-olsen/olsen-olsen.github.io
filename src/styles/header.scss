@@ -1,21 +1,32 @@
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 .title {
   font-family: $font-heading;
   display: flex;
+  flex-direction: row;
 
   &.company {
     font-size: 4rem;
-    // justify-content: center;
   }
 
   &.container {
     font-size: 3rem;
   }
 
+  &.about {
+    font-size: 3rem;
+  }
+
   &.menusection {
     font-size: 2rem;
+  }
+}
+
+.top_right {
+  &.rightsection {
+    list-style-type: none;
   }
 }

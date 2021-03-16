@@ -12,28 +12,39 @@
 html {
   /* stylelint-disable-line */
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   font-family: "Crimson Text", serif;
   font-size: 16px;
-  width: 1200px;
+  width: 100%;
+  padding: 30px 30px;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 .title {
   font-family: "Allura", cursive;
   display: flex;
+  flex-direction: row;
 }
 .title.company {
   font-size: 4rem;
-  justify-content: center;
 }
 .title.container {
   font-size: 3rem;
 }
+.title.about {
+  font-size: 3rem;
+}
 .title.menusection {
   font-size: 2rem;
+}
+
+.top_right.rightsection {
+  list-style-type: none;
 }
 
 .container {
@@ -48,6 +59,9 @@ html {
 }
 .container_items {
   margin: 10px 10px 10px 10px;
+}
+.container .olsen_image {
+  width: 100%;
 }
 
 .menu_list {

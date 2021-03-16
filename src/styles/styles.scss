@@ -1,7 +1,7 @@
 @charset "utf-8";
 $font-main: 'Crimson Text', serif;
 $font-heading: 'Allura', cursive;
-$max-width: 1200px;
+$max-width: 1180px;
 
 * {
   padding: 0;
@@ -16,9 +16,12 @@ $max-width: 1200px;
 
 html { /* stylelint-disable-line */
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   font-family: $font-main;
   font-size: 16px;
-  width: $max-width;
+  width: 100%;
+  padding: 30px 30px;
 }
 
 @import "header.scss";
