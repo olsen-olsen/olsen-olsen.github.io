@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &_items_list {
+    border-style: solid;
+    flex-direction: row;
+  }
+
+  &_items {
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+.menu_list {
+  border-style: solid;
+  justify-content: space-around;
+
+  /* flex-wrap: wrap; */
+  margin: 10px 10px 10px 10px;
+  width: 45%;
+
+  /* &.steikurogfiskur {
+     height: 12%;
+   } */
+}
+
+.nafn {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.verd {
+  font-size: 0.75rem;
+
+  &_litill {
+    font-size: 0.6875rem;
+    margin-right: 10px;
+  }
+
+  &_stor {
+    font-size: 0.6875rem;
+  }
+
+  &_storoglitill {
+    display: flex;
+  }
+}
+
+.footer {
+  max-width: 100%;
+
+  &_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 20px 40px 20px;
+  }
+}

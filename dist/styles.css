@@ -1,17 +1,93 @@
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  /* stylelint-disable-line */
-  box-sizing: inherit;
+* {
   padding: 0;
   margin: 0;
 }
 
-body {
-  color: red;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  width: 1200px;
+}
+
+.header {
+  display: flex;
+}
+
+.title {
+  font-family: "Allura", cursive;
+  display: flex;
+}
+.title.company {
+  font-size: 4rem;
+  justify-content: center;
+}
+.title.container {
+  font-size: 3rem;
+}
+.title.menusection {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container_items_list {
+  border-style: solid;
+  flex-direction: row;
+}
+.container_items {
+  margin: 10px 10px 10px 10px;
+}
+
+.menu_list {
+  border-style: solid;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  margin: 10px 10px 10px 10px;
+  width: 45%;
+  /* &.steikurogfiskur {
+     height: 12%;
+   } */
+}
+
+.nafn {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.verd {
+  font-size: 0.75rem;
+}
+.verd_litill {
+  font-size: 0.6875rem;
+  margin-right: 10px;
+}
+.verd_stor {
+  font-size: 0.6875rem;
+}
+.verd_storoglitill {
+  display: flex;
+}
+
+.footer {
+  max-width: 100%;
+}
+.footer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 20px 40px 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

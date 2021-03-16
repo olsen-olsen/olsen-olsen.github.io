@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+}
+
+.title {
+  font-family: $font-heading;
+  display: flex;
+
+  &.company {
+    font-size: 4rem;
+    // justify-content: center;
+  }
+
+  &.container {
+    font-size: 3rem;
+  }
+
+  &.menusection {
+    font-size: 2rem;
+  }
+}
