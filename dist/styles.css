@@ -87,6 +87,7 @@ html {
 .menu_image img {
   width: 100%;
   padding: 20px 0 20px 0;
+  border-radius: 125px;
 }
 .menu_list {
   justify-content: space-around;
