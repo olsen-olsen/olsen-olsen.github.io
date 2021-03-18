@@ -1,6 +1,7 @@
 @charset "utf-8";
 $font-main: 'Crimson Text', serif;
-$font-heading: 'Allura', cursive;
+$font-header-title: 'Lora', serif;
+$font-main-title: "Allura", cursive;
 $max-width: 1180px;
 
 * {
@@ -21,7 +22,9 @@ html { /* stylelint-disable-line */
   font-family: $font-main;
   font-size: 16px;
   width: 100%;
-  padding: 30px 30px;
+  padding: 30px 30px 0 30px;
+  background-color: #faebd7;
+  // background-color: #b30000;
 }
 
 @import "header.scss";

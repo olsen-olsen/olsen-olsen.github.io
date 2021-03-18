@@ -1,3 +1,16 @@
+.title {
+  font-family: $font-main-title;
+
+  &.menusection {
+    font-size: 4rem;
+
+    &.batar {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,30 +18,45 @@
   justify-content: center;
 
   &_items_list {
-    border-style: solid;
+    // border-style: solid;
     flex-direction: row;
   }
 
   &_items {
     margin: 10px 10px 10px 10px;
+
+    &.batar {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .olsen_image {
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
-.menu_list {
-  border-style: solid;
-  justify-content: space-around;
+.menu {
+  &_image img {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
 
-  /* flex-wrap: wrap; */
-  margin: 10px 10px 10px 10px;
-  width: 45%;
+  &_list {
+    // border-style: solid;
+    justify-content: space-around;
 
-  /* &.steikurogfiskur {
-     height: 12%;
-   } */
+    /* flex-wrap: wrap; */
+    margin: 10px 10px 10px 10px;
+    width: 45%;
+
+    &.batar {
+      width: 100%;
+    }
+  }
 }
 
 .nafn {

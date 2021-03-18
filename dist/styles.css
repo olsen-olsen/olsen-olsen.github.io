@@ -17,34 +17,48 @@ html {
   font-family: "Crimson Text", serif;
   font-size: 16px;
   width: 100%;
-  padding: 30px 30px;
+  padding: 30px 30px 0 30px;
+  background-color: #faebd7;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Lora", serif;
+}
+.header__title {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__title.company {
+  font-size: 3.5rem;
+  color: red;
+}
+.header__right .rightsection {
+  display: flex;
+  flex-direction: row;
+}
+.header__right .rightsection--items {
+  padding-right: 1.5rem;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.header__right .rightsection--title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
 }
 
 .title {
   font-family: "Allura", cursive;
-  display: flex;
-  flex-direction: row;
-}
-.title.company {
-  font-size: 4rem;
-}
-.title.container {
-  font-size: 3rem;
-}
-.title.about {
-  font-size: 3rem;
 }
 .title.menusection {
-  font-size: 2rem;
+  font-size: 4rem;
 }
-
-.top_right.rightsection {
-  list-style-type: none;
+.title.menusection.batar {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -54,25 +68,34 @@ html {
   justify-content: center;
 }
 .container_items_list {
-  border-style: solid;
   flex-direction: row;
 }
 .container_items {
   margin: 10px 10px 10px 10px;
 }
+.container_items.batar {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
 .container .olsen_image {
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+.menu_image img {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
 .menu_list {
-  border-style: solid;
   justify-content: space-around;
   /* flex-wrap: wrap; */
   margin: 10px 10px 10px 10px;
   width: 45%;
-  /* &.steikurogfiskur {
-     height: 12%;
-   } */
+}
+.menu_list.batar {
+  width: 100%;
 }
 
 .nafn {
