@@ -160,6 +160,17 @@ html {
   margin: 40px 20px 40px 20px;
 }
 
+.story {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.story_image {
+  width: 100%;
+  z-index: 1;
+}
+
 .footer_content {
   display: flex;
   flex-direction: column;

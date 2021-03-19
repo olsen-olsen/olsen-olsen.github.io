@@ -105,3 +105,15 @@
     margin: 40px 20px 40px 20px;
   }
 }
+
+.story {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_image {
+    width: 100%;
+    z-index: 1;
+  }
+}
