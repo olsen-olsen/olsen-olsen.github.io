@@ -37,6 +37,18 @@
     padding: 20px 0 20px 0;
     border-radius: 125px;
   }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &_image {
+      width: 2rem;
+      height: 2rem;
+      padding: 0 5px 0 5px;
+    }
+  }
 }
 
 .menu {

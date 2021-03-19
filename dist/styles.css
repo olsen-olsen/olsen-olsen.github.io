@@ -34,6 +34,19 @@ html {
 .header__title.company {
   font-size: 3.5rem;
   color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-shadow: -5.5px -2.75px lightpink;
+  transform: rotate(-5deg);
+}
+.header__title.company .flicker-slow {
+  animation: flicker 10s linear infinite;
+}
+.header__title.company .flicker-fast {
+  animation: flicker 5s linear infinite;
+  font-size: 2.5rem;
+  transform: translate(40%, -25%) rotate(0deg);
 }
 .header__right .rightsection {
   display: flex;
@@ -50,6 +63,14 @@ html {
   color: gray;
 }
 
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+  }
+}
 .title {
   font-family: "Allura", cursive;
 }
@@ -82,6 +103,16 @@ html {
   width: 100%;
   padding: 20px 0 20px 0;
   border-radius: 125px;
+}
+.container .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .icon_image {
+  width: 2rem;
+  height: 2rem;
+  padding: 0 5px 0 5px;
 }
 
 .menu_image img {

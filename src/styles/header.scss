@@ -1,3 +1,5 @@
+// $outline: rgba(#fff, 0.4);
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -11,6 +13,24 @@
     &.company {
       font-size: 3.5rem;
       color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-shadow: -5.5px -2.75px lightpink;
+      transform: rotate(-5deg);
+      // animation: flicker 3s linear infinite;
+      .flicker-slow {
+        animation: flicker 10s linear infinite;
+      }
+
+      .flicker-fast {
+        animation: flicker 5s linear infinite;
+        font-size: 2.5rem;
+        // font-family: $font-header-neon;
+        // color: #ffd5ff;
+        // text-shadow: 1px 0 4px #ffd5ff, 2px 0 4px #ffd5ff, 3px 0 4px #ffd5ff, 2px 0 3px #d42cca, 2px 3px 15px #d42cca, 2px 0 15px, 5px 0 125px, 20 0 200 #d42cca, 40 0 200 #d42cca;
+        transform: translate(40%, -25%) rotate(0deg);
+      }
     }
   }
 
@@ -32,41 +52,47 @@
   }
 }
 
-// .title {
-//   font-family: $font-heading;
-//   text-decoration: none;
-//   display: flex;
-
-//   &.company {
-//     font-size: 4rem;
-//     color: red;
+// @keyframes flicker {
+//   0%,
+//   19.999%,
+//   22%,
+//   62.999%,
+//   64%,
+//   64.999%,
+//   70%,
+//   100% {
+//     opacity: 0.99;
+//     text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
 //   }
 
-//   &.container {
-//     font-size: 2.5rem;
-//     color: gray;
-//   }
-
-//   &.about {
-//     font-size: 2.5rem;
-//     color: gray;
-//   }
-
-//   &.menusection {
-//     font-size: 2rem;
-//   }
-// }
-
-// .top_right {
-//   display: flex;
-//   align-items: center;
-
-//   &.rightsection {
-//     list-style-type: none;
-//     display: flex;
-
-//     li {
-//       padding-right: 1em;
-//     }
+//   20%,
+//   21.999%,
+//   63%,
+//   63.999%,
+//   65%,
+//   69.999% {
+//     opacity: 0.4;
+//     text-shadow: 50px;
 //   }
 // }
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+  }
+
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
+}
