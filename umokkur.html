@@ -6,16 +6,65 @@
         <title>Um Okkur</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Crimson+Text&family=Lora:wght@700&family=Monoton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="dist/styles.css" />
     </head>
     <body>
-        <div>
-            <p>
-                OlsenOlsen hefur verið til síðan 1995. Var til húsa á hafnargötu 17 en síðan fluttist staðurinn ofar á hafnargötu 62. Fjölskyldu rekið fyrirtæki sem hefur alltaf haft þá stefnu að vinna allt frá grunni og þá erum við að meina allt kjöt, brauð, sósur og nánast allt unnið með okkar höndum.
-            </p>
-        </div>
+      <header>
+          <div class="header">
+              <div class="header__left">
+                  <a href="." class="header__title company">
+                      <span class="flicker-slow">Olsen Olsen</span>
+                      <span class="flicker-fast">DINER</span>
+                  </a>
+              </div>
+              <div class="header__right">
+                  <ul class="header__right rightsection">
+                      <li class="rightsection--items">
+                          <a href="./matsedill.html" class="rightsection--title">Matseðill</a>
+                      </li>
+                      <li class="rightsection--items">
+                          <a href="./umokkur.html" class="rightsection--title">Um Okkur</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </header>
+        <main>
+            <div>
+                <p>
+                    OlsenOlsen hefur verið til síðan 1995. Var til húsa á hafnargötu 17 en síðan fluttist staðurinn ofar á hafnargötu 62. Fjölskyldu rekið fyrirtæki sem hefur alltaf haft þá stefnu að vinna allt frá grunni og þá erum við að meina allt kjöt, brauð, sósur og nánast allt unnið með okkar höndum.
+                </p>
+            </div>
+        </main>
+        <footer>
+          <div class="footer_content">
+              <div class="footer_col above">
+                  <p>Opnunar tímar: 11:00 - 23:00 alla daga</p>
+              </div>
+              <div class="footer_col below">
+                  <div class="col_items">
+                      <a href="https://www.google.com/maps/place/Hafnargata+62,+230+Keflav%C3%ADk/@63.99976,-22.5524398,17z/data=!3m1!4b1!4m5!3m4!1s0x48d60222e24865a3:0x1e45085da7e246f9!8m2!3d63.99976!4d-22.550251">
+                          <img src="./src/img/map-marker-alt-solid.svg" alt="" />
+                          <p>Hafnargötu 62, 230 Reykjanesbæ</p>
+                      </a>
+                  </div>
+                  <div class="col_items">
+                      <a href="tel:3544214457">
+                          <img src="./src/img/phone-alt-solid.svg" alt="" />
+                          <p>+354 421 4457</p>
+                      </a>
+                  </div>
+                  <div class="col_items">
+                      <a href="mailto:olsen-olsen@simnet.is">
+                          <img src="./src/img/envelope-solid.svg" alt="" />
+                          <p>olsen-olsen@simnet.is</p>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </footer>
     </body>
 </html>

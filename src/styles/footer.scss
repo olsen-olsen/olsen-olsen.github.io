@@ -1,0 +1,33 @@
+.footer_content {
+  display: flex;
+  flex-direction: column;
+
+  .above {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .below {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+
+    .col_items a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        padding: 0 5px 0 5px;
+      }
+    }
+  }
+}
