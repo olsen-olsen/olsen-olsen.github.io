@@ -50,12 +50,12 @@ html {
   flex-direction: row;
 }
 .header__right .rightsection--items {
-  padding-right: 1.5rem;
+  padding-right: 1rem;
   list-style-type: none;
   text-transform: uppercase;
 }
 .header__right .rightsection--title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   color: gray;
 }
@@ -134,14 +134,17 @@ html {
 }
 
 .verd {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  font-style: italic;
 }
 .verd_litill {
-  font-size: 0.6875rem;
+  font-size: 0.85rem;
   margin-right: 10px;
+  font-style: italic;
 }
 .verd_stor {
-  font-size: 0.6875rem;
+  font-size: 0.85rem;
+  font-style: italic;
 }
 .verd_storoglitill {
   display: flex;
