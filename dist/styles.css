@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   display: block;
   font-family: "Crimson Text", serif;
-  font-size: 16px;
+  font-size: 1em;
   width: 1000px;
   padding: 30px 30px 0 30px;
   margin: 0 auto;
@@ -96,16 +96,8 @@ html {
   display: flex;
   flex-direction: row;
 }
-.container .tilkyningu_texti {
-  font-size: 1.5em;
-  text-align: center;
-  /* Font options */
-  /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 5s infinite;
-  /* Internet Explorer */
-  -ms-animation: rainbow 5s infinite;
-  /* Standar Syntax */
-  animation: rainbow 8s infinite;
+.container_items.batar_left .lysing {
+  font-size: 1rem;
 }
 .container .olsen_image {
   width: 100%;
@@ -124,10 +116,19 @@ html {
   padding: 0 5px 0 5px;
 }
 
-.menu_image img {
+.menu_image .imageList img {
   width: 100%;
   padding: 20px 0 20px 0;
   border-radius: 125px;
+}
+.menu_image .buttonList {
+  display: flex;
+  justify-content: center;
+}
+.menu_image .buttonList .buttons {
+  background-color: red;
+  padding: 0.65rem;
+  border-radius: 50%;
 }
 .menu_list {
   justify-content: space-around;
@@ -145,16 +146,16 @@ html {
 }
 
 .verd {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-style: italic;
 }
 .verd_litill {
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin-right: 10px;
   font-style: italic;
 }
 .verd_stor {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-style: italic;
 }
 .verd_storoglitill {
@@ -183,97 +184,18 @@ html {
   border-radius: 125px;
 }
 
-/* fyrir tilkynninga_texti */
+.starline {
+  display: flex;
+}
+.starline .star {
+  width: 50%;
+  height: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tilkynninga_texti */
 /* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow {
-  0% {
-    color: orange;
-  }
-  10% {
-    color: purple;
-  }
-  20% {
-    color: red;
-  }
-  30% {
-    color: cadetblue;
-  }
-  50% {
-    color: coral;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: deeppink;
-  }
-  90% {
-    color: dodgerblue;
-  }
-  100% {
-    color: orange;
-  }
-}
-/* Internet Explorer */
-@-ms-keyframes rainbow {
-  0% {
-    color: orange;
-  }
-  10% {
-    color: purple;
-  }
-  20% {
-    color: red;
-  }
-  30% {
-    color: cadetblue;
-  }
-  50% {
-    color: coral;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: deeppink;
-  }
-  90% {
-    color: dodgerblue;
-  }
-  100% {
-    color: orange;
-  }
-}
-/* Standar Syntax */
-@keyframes rainbow {
-  0% {
-    color: orange;
-  }
-  10% {
-    color: purple;
-  }
-  20% {
-    color: red;
-  }
-  30% {
-    color: cadetblue;
-  }
-  50% {
-    color: coral;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: deeppink;
-  }
-  90% {
-    color: dodgerblue;
-  }
-  100% {
-    color: orange;
-  }
-}
 .footer_content {
   display: flex;
   flex-direction: column;

@@ -29,6 +29,10 @@
       margin: 0;
       display: flex;
       flex-direction: row;
+
+      &_left .lysing {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -62,10 +66,35 @@
 }
 
 .menu {
-  &_image img {
-    width: 100%;
-    padding: 20px 0 20px 0;
-    border-radius: 125px;
+  // &_image {
+  //   height: 200px;
+  // }
+
+  &_image .imageList {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // width: 100rem;
+    // height: 100rem;
+    // object-fit: cover;
+    // height: 500px;
+
+   img {
+      width: 100%;
+      padding: 20px 0 20px 0;
+      border-radius: 125px;
+    }
+  }
+
+  &_image .buttonList {
+    display: flex;
+    justify-content: center;
+
+    .buttons {
+      background-color: red;
+      padding: 0.65rem;
+      border-radius: 50%;
+    }
   }
 
   &_list {
@@ -88,17 +117,17 @@
 }
 
 .verd {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-style: italic;
 
   &_litill {
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-right: 10px;
     font-style: italic;
   }
 
   &_stor {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-style: italic;
   }
 
@@ -132,8 +161,21 @@
   }
 }
 
+.starline {
+  display: flex;
+
+  .star {
+    width: 50%;
+    height: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* Tilkynninga_texti */
+
 /* Chrome, Safari, Opera */
+
 // @-webkit-keyframes rainbow {
 //   0% {
 //     color: orange;
