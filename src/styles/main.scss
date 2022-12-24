@@ -17,6 +17,13 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  &__opentime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8em;
+  }
+
   &_items_list {
     // border-style: solid;
     flex-direction: row;
@@ -66,10 +73,6 @@
 }
 
 .menu {
-  // &_image {
-  //   height: 200px;
-  // }
-
   &_image .imageList {
     // display: flex;
     // justify-content: center;
@@ -79,7 +82,7 @@
     // object-fit: cover;
     // height: 500px;
 
-   img {
+    img {
       width: 100%;
       padding: 20px 0 20px 0;
       border-radius: 125px;

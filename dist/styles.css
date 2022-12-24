@@ -85,6 +85,12 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
+.container__opentime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8em;
+}
 .container_items_list {
   flex-direction: row;
 }
