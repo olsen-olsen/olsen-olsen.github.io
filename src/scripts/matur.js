@@ -9,6 +9,7 @@ const doigia = (() => {
   var text;
   var valueham;
   var j, z;
+  var strTala;
 
   function init(_container) {
     // console.log("hello");
@@ -50,7 +51,7 @@ const doigia = (() => {
           items_ham[i].children[2].textContent = "";
           // Adding new price with
           // text = document.createTextNode("Vantar")
-          text = document.createTextNode(Object.values(data)[i][0] + " kr.");
+          text = document.createTextNode(punktur(Object.values(data)[i][0] + "") + " kr.");
           items_ham[i].children[2].appendChild(text);
           // console.log(items_ham[i].children[2].textContent);
         }
@@ -71,7 +72,7 @@ const doigia = (() => {
           items_storham[i].children[2].textContent = "";
           // Adding new price with
           // text = document.createTextNode("Vantar")
-          text = document.createTextNode(Object.values(data)[i][0] + " kr.");
+          text = document.createTextNode(punktur(Object.values(data)[i][0] + "") + " kr.");
           items_storham[i].children[2].appendChild(text);
           // console.log(items_storham[i].children[2].textContent);
         }
@@ -104,13 +105,13 @@ const doigia = (() => {
 
           // batar_left > items_batur > verd_storoglitill > verd_litill
           batar_left.children[i].children[1].children[j].textContent = "";
-          text = document.createTextNode("6\": " + Object.values(data)[z][0] + " kr. ");
+          text = document.createTextNode("6\": " + punktur(Object.values(data)[z][0] + "") + " kr. ");
           batar_left.children[i].children[1].children[j].appendChild(text);
 
           z++;
           // batar_left > items_batur > verd_storoglitill > verd_stor
           batar_left.children[i].children[1].children[j+1].textContent = "";
-          text = document.createTextNode("12\": " + Object.values(data)[z][0] + " kr.");
+          text = document.createTextNode("12\": " + punktur(Object.values(data)[z][0] + "") + " kr.");
           batar_left.children[i].children[1].children[j+1].appendChild(text);
           z++;
         }
@@ -145,13 +146,13 @@ const doigia = (() => {
 
           // batar_right > items_batur > verd_storoglitill > verd_litill
           batar_right.children[i].children[1].children[j].textContent = "";
-          text = document.createTextNode("6\": " + Object.values(data)[z][0] + " kr. ");
+          text = document.createTextNode("6\": " + punktur(Object.values(data)[z][0] + "") + " kr. ");
           batar_right.children[i].children[1].children[j].appendChild(text);
 
           z++;
           // batar_right > items_batur > verd_storoglitill > verd_stor
           batar_right.children[i].children[1].children[j+1].textContent = "";
-          text = document.createTextNode("12\": " + Object.values(data)[z][0] + " kr.");
+          text = document.createTextNode("12\": " + punktur(Object.values(data)[z][0] + "") + " kr.");
           batar_right.children[i].children[1].children[j+1].appendChild(text);
           z++;
         }
@@ -177,7 +178,7 @@ const doigia = (() => {
           items_steikurogfiskur[i].children[2].textContent = "";
           // Adding new price with
           // text = document.createTextNode("Vantar")
-          text = document.createTextNode(Object.values(data)[i][0] + " kr.");
+          text = document.createTextNode(punktur(Object.values(data)[i][0] + "") + " kr.");
           items_steikurogfiskur[i].children[2].appendChild(text);
           // console.log(items_steikurogfiskur[i].children[2].textContent);
         }
@@ -201,7 +202,7 @@ const doigia = (() => {
           items_samlokur[i].children[2].textContent = "";
           // Adding new price with
           // text = document.createTextNode("Vantar")
-          text = document.createTextNode(Object.values(data)[i][0] + " kr.");
+          text = document.createTextNode(punktur(Object.values(data)[i][0] + "") + " kr.");
           items_samlokur[i].children[2].appendChild(text);
           // console.log(items_samlokur[i].children[2].textContent);
         }
@@ -238,13 +239,13 @@ const doigia = (() => {
 
           // items_salat >  verd_storoglitill > verd_litill
           salat.children[i].children[2].children[j].textContent = "";
-          text = document.createTextNode("Verð Lítið: " + Object.values(data)[z][0] + " kr. ");
+          text = document.createTextNode("Verð Lítið: " + punktur(Object.values(data)[z][0] + "") + " kr. ");
           salat.children[i].children[2].children[j].appendChild(text);
 
           z++;
           // items_salat >  verd_storoglitill > verd_stor
           salat.children[i].children[2].children[j+1].textContent = "";
-          text = document.createTextNode("Verð Stórt: " + Object.values(data)[z][0] + " kr.");
+          text = document.createTextNode("Verð Stórt: " + punktur(Object.values(data)[z][0] + "") + " kr.");
           salat.children[i].children[2].children[j+1].appendChild(text);
           z++;
         }
@@ -259,14 +260,14 @@ const doigia = (() => {
     // fetch("http://localhost:3000/src/data/barnamatsedill.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
 
         z = 0;
 
         // set var i = 1 because the first child i=0 is the menu title
         for(var i=1; i < barnamatsedill.children.length; i++){
           barnamatsedill.children[i].children[2].textContent = "";
-          text = document.createTextNode(Object.values(data)[z][0] + " kr.");
+          text = document.createTextNode(punktur(Object.values(data)[z][0] + "") + " kr.");
           barnamatsedill.children[i].children[2].appendChild(text);
           z++;
         }
@@ -275,6 +276,14 @@ const doigia = (() => {
         console.error("Unable to fetch data:", error));
 
 
+  }
+
+  function punktur(tala) {
+    // only work if price is with 4 digit and hope price does not grow more
+    if(tala.length === 4) {
+      tala = tala.substring(0,1) + "." + tala.substring(1,4);
+    }
+    return tala;
   }
 
   return {
