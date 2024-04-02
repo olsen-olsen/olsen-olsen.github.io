@@ -31,8 +31,8 @@ const doigia = (() => {
 
 
     // Hamborgarar
-    // fetch("../data/ham.json")
-    fetch("http://localhost:3000/src/data/ham.json")
+    fetch("../data/ham.json")
+    // fetch("http://localhost:3000/src/data/ham.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
@@ -60,8 +60,8 @@ const doigia = (() => {
 
 
     // Stór hamborgarar
-    // fetch("../data/storham.json")
-    fetch("http://localhost:3000/src/data/storham.json")
+    fetch("../data/storham.json")
+    // fetch("http://localhost:3000/src/data/storham.json")
       .then((response) => response.json())
       .then((data) => {
         for(var i = 0; i < items_storham.length; i++){
@@ -82,8 +82,8 @@ const doigia = (() => {
 
 
     // Bátar Left
-    // fetch("../data/batar_left.json")
-    fetch("http://localhost:3000/src/data/batar_left.json")
+    fetch("../data/batar_left.json")
+    // fetch("http://localhost:3000/src/data/batar_left.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log("hello");
@@ -123,8 +123,8 @@ const doigia = (() => {
 
 
     // Bátar Right
-    // fetch("../data/batar_right.json")
-    fetch("http://localhost:3000/src/data/batar_right.json")
+    fetch("../data/batar_right.json")
+    // fetch("http://localhost:3000/src/data/batar_right.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log("hello");
@@ -165,8 +165,8 @@ const doigia = (() => {
 
 
     // Steikur og Fiskur
-    // fetch("../data/steikurogfiskur.json")
-    fetch("http://localhost:3000/src/data/steikurogfiskur.json")
+    fetch("../data/steikurogfiskur.json")
+    // fetch("http://localhost:3000/src/data/steikurogfiskur.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
@@ -189,8 +189,8 @@ const doigia = (() => {
 
 
     // Samlokur
-    // fetch("../data/samlokur.json")
-    fetch("http://localhost:3000/src/data/samlokur.json")
+    fetch("../data/samlokur.json")
+    // fetch("http://localhost:3000/src/data/samlokur.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
@@ -212,8 +212,8 @@ const doigia = (() => {
 
 
     // Salat
-    // fetch("../data/salat.json")
-    fetch("http://localhost:3000/src/data/salat.json")
+    fetch("../data/salat.json")
+    // fetch("http://localhost:3000/src/data/salat.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log("hello");
@@ -255,8 +255,8 @@ const doigia = (() => {
 
 
     // Barnamatseðill
-    // fetch("../data/barnamatsedill.json")
-    fetch("http://localhost:3000/src/data/barnamatsedill.json")
+    fetch("../data/barnamatsedill.json")
+    // fetch("http://localhost:3000/src/data/barnamatsedill.json")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
