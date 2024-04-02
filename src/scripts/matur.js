@@ -31,7 +31,7 @@ const doigia = (() => {
 
 
     // Hamborgarar
-    fetch("../data/ham.json")
+    fetch("https://olsenolsen.is/src/data/ham.json")
     // fetch("http://localhost:3000/src/data/ham.json")
       .then((response) => response.json())
       .then((data) => {
@@ -60,7 +60,7 @@ const doigia = (() => {
 
 
     // Stór hamborgarar
-    fetch("../data/storham.json")
+    fetch("https://olsenolsen.is/src/data/storham.json")
     // fetch("http://localhost:3000/src/data/storham.json")
       .then((response) => response.json())
       .then((data) => {
@@ -82,7 +82,7 @@ const doigia = (() => {
 
 
     // Bátar Left
-    fetch("../data/batar_left.json")
+    fetch("https://olsenolsen.is/src/data/batar_left.json")
     // fetch("http://localhost:3000/src/data/batar_left.json")
       .then((response) => response.json())
       .then((data) => {
@@ -123,7 +123,7 @@ const doigia = (() => {
 
 
     // Bátar Right
-    fetch("../data/batar_right.json")
+    fetch("https://olsenolsen.is/src/data/batar_right.json")
     // fetch("http://localhost:3000/src/data/batar_right.json")
       .then((response) => response.json())
       .then((data) => {
@@ -165,7 +165,7 @@ const doigia = (() => {
 
 
     // Steikur og Fiskur
-    fetch("../data/steikurogfiskur.json")
+    fetch("https://olsenolsen.is/src/data/steikurogfiskur.json")
     // fetch("http://localhost:3000/src/data/steikurogfiskur.json")
       .then((response) => response.json())
       .then((data) => {
@@ -189,7 +189,7 @@ const doigia = (() => {
 
 
     // Samlokur
-    fetch("../data/samlokur.json")
+    fetch("https://olsenolsen.is/src/data/samlokur.json")
     // fetch("http://localhost:3000/src/data/samlokur.json")
       .then((response) => response.json())
       .then((data) => {
@@ -212,7 +212,7 @@ const doigia = (() => {
 
 
     // Salat
-    fetch("../data/salat.json")
+    fetch("https://olsenolsen.is/data/salat.json")
     // fetch("http://localhost:3000/src/data/salat.json")
       .then((response) => response.json())
       .then((data) => {
@@ -255,7 +255,7 @@ const doigia = (() => {
 
 
     // Barnamatseðill
-    fetch("../data/barnamatsedill.json")
+    fetch("https://olsenolsen.is/src/data/barnamatsedill.json")
     // fetch("http://localhost:3000/src/data/barnamatsedill.json")
       .then((response) => response.json())
       .then((data) => {
