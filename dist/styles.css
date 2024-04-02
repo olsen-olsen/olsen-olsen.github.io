@@ -6,8 +6,7 @@
   margin: 0;
 }
 
-html {
-  /* stylelint-disable-line */
+html { /* stylelint-disable-line */
   box-sizing: border-box;
   display: block;
   font-family: "Crimson Text", serif;
