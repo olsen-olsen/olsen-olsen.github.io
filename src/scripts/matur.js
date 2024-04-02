@@ -212,7 +212,7 @@ const doigia = (() => {
 
 
     // Salat
-    fetch("https://olsenolsen.is/data/salat.json")
+    fetch("https://olsenolsen.is/src/data/salat.json")
     // fetch("http://localhost:3000/src/data/salat.json")
       .then((response) => response.json())
       .then((data) => {
