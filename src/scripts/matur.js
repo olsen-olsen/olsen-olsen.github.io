@@ -34,8 +34,7 @@ const doigia = (() => {
 
 
     // Hamborgarar
-    fetch("https://olsenolsen.is/src/data/ham.json" || ".src/data/ham.json")
-    // fetch("./src/data/ham.json")
+    fetch("https://olsenolsen.is/src/data/ham.json" || "http://localhost:3000/src/data/ham.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
@@ -63,8 +62,7 @@ const doigia = (() => {
 
 
     // Stór hamborgarar
-    fetch("https://olsenolsen.is/src/data/storham.json" || ".src/data/storham.json")
-    // fetch("./src/data/storham.json")
+    fetch("https://olsenolsen.is/src/data/storham.json" || "http://localhost:3000/src/data/storham.json")
       .then((response) => response.json())
       .then((data) => {
         for(var i = 0; i < items_storham.length; i++){
@@ -85,8 +83,7 @@ const doigia = (() => {
 
 
     // Bátar Left
-    fetch("https://olsenolsen.is/src/data/batar_left.json" || ".src/data/batar_left.json")
-    // fetch("./src/data/batar_left.json")
+    fetch("https://olsenolsen.is/src/data/batar_left.json" || "http://localhost:3000/src/data/batar_left.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log("hello");
@@ -126,8 +123,7 @@ const doigia = (() => {
 
 
     // Bátar Right
-    fetch("https://olsenolsen.is/src/data/batar_right.json" || ".src/data/batar_right.json")
-    // fetch("./src/data/batar_right.json")
+    fetch("https://olsenolsen.is/src/data/batar_right.json" || "http://localhost:3000/src/data/batar_right.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log("hello");
@@ -168,8 +164,7 @@ const doigia = (() => {
 
 
     // Steikur og Fiskur
-    fetch("https://olsenolsen.is/src/data/steikurogfiskur.json" || ".src/data/steikurogfiskur.json")
-    // fetch("./src/data/steikurogfiskur.json")
+    fetch("https://olsenolsen.is/src/data/steikurogfiskur.json" || "http://localhost:3000/src/data/steikurogfiskur.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
@@ -192,8 +187,7 @@ const doigia = (() => {
 
 
     // Samlokur
-    fetch("https://olsenolsen.is/src/data/samlokur.json" || ".src/data/samlokur.json")
-    // fetch("./src/data/samlokur.json")
+    fetch("https://olsenolsen.is/src/data/samlokur.json" || "http://localhost:3000/src/data/samlokur.json")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
@@ -215,8 +209,7 @@ const doigia = (() => {
 
 
     // Salat
-    fetch("https://olsenolsen.is/src/data/salat.json" || "./src/data/salat.json")
-    // fetch("./src/data/salat.json")
+    fetch("https://olsenolsen.is/src/data/salat.json" || "http://localhost:3000/src/data/salat.json")
       .then((response) => response.json())
       .then((data) => {
         console.log("Salat");
@@ -265,7 +258,6 @@ const doigia = (() => {
 
         // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
         if(window.location.href === "https://olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
-        // if(window.location.href === "http:localhost:3000/matsedill.html") {
           for(var i=1; i < salat.children.length; i++){
 
             salat.children[i].children[2].children[j].textContent = "";
@@ -281,7 +273,6 @@ const doigia = (() => {
         }
         // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
         else if(window.location.href === "https://olsenolsen.is/enskumatsedill.html" || window.location.href === "http://localhost:3000/enskumatsedill.html") {
-        // else if(window.location.href === "http:localhost:3000/enskumatsedill.html") {
           for(var i=1; i < salat.children.length; i++){
 
             salat.children[i].children[2].children[j].textContent = "";
@@ -305,7 +296,7 @@ const doigia = (() => {
 
 
     // Barnamatseðill
-    fetch("https://olsenolsen.is/src/data/barnamatsedill.json" || ".src/data/barnamatsedill.json")
+    fetch("https://olsenolsen.is/src/data/barnamatsedill.json" || "http://localhost:3000/src/data/barnamatsedill.json")
     // fetch("./src/data/barnamatsedill.json")
       .then((response) => response.json())
       .then((data) => {
@@ -326,8 +317,7 @@ const doigia = (() => {
 
 
     // Meðlæti
-    fetch("https://olsenolsen.is/src/data/medlaeti.json" || ".src/data/medlaeti.json")
-    // fetch("./src/data/medlaeti.json")
+    fetch("https://olsenolsen.is/src/data/medlaeti.json" || "http://localhost:3000/src/data/medlaeti.json")
       .then((response) => response.json())
       .then((data) => {
         console.log("meðlæti")
@@ -337,8 +327,7 @@ const doigia = (() => {
         console.log(window.location.href === "http://localhost:3000/matsedill.html");
 
         // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
-        if(window.location.href === "https://olsenolsen.is/matsedill.html" || "http://localhost:3000/matsedill.html") {
-        // if(window.location.href === "http://localhost:3000/matsedill.html") {
+        if(window.location.href === "https://olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");
           console.log("here");
@@ -365,7 +354,6 @@ const doigia = (() => {
         }
         // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
         else if(window.location.href === "https://olsenolsen.is/enskumatsedill.html" || window.location.href === "http://localhost:3000/enskumatsedill.html") {
-        // else if(window.location.href === "http://localhost:3000/enskumatsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");
           console.log(items_replace);
@@ -413,8 +401,7 @@ const doigia = (() => {
 
 
     // Sósur
-    fetch("https://olsenolsen.is/src/data/sosur.json" || ".src/data/sosur.json")
-    // fetch("./src/data/sosur.json")
+    fetch("https://olsenolsen.is/src/data/sosur.json" || "http://localhost:3000/src/data/sosur.json")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
