@@ -215,7 +215,7 @@ const doigia = (() => {
 
 
     // Salat
-    fetch("https:olsenolsen.is/src/data/salat.json" || ".src/data/salat.json")
+    fetch("https:olsenolsen.is/src/data/salat.json" || "../../src/data/salat.json")
     // fetch("./src/data/salat.json")
       .then((response) => response.json())
       .then((data) => {
@@ -308,11 +308,12 @@ const doigia = (() => {
     // fetch("./src/data/medlaeti.json")
       .then((response) => response.json())
       .then((data) => {
+        console.log("meðlæti")
         console.log(data);
         console.log(window.location.href);
 
         // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
-        if(window.location.href === "https:olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
+        if(window.location.href === "https:olsenolsen.is/matsedill.html" || window.location.href === "./matsedill.html") {
         // if(window.location.href === "http://localhost:3000/matsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");
@@ -338,7 +339,7 @@ const doigia = (() => {
 
         }
         // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
-        else if(window.location.href === "https:olsenolsen.is/enskumatsedill.html" || window.location.href === "http://localhost:3000/enskumatsedill.html") {
+        else if(window.location.href === "https:olsenolsen.is/enskumatsedill.html" || window.location.href === "./enskumatsedill.html") {
         // else if(window.location.href === "http://localhost:3000/enskumatsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");
@@ -387,22 +388,22 @@ const doigia = (() => {
 
 
     // Sósur
-    fetch("https:olsenolsen.is/src/data/sosur.json" || ".src/data/sosur.json")
-    // fetch("./src/data/sosur.json")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        console.log(allasosur);
-        console.log(allasosur[1]);
+    // fetch("https:olsenolsen.is/src/data/sosur.json" || ".src/data/sosur.json")
+    // // fetch("./src/data/sosur.json")
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //     console.log(allasosur.length);
+    //     console.log(allasosur[1]);
 
-        for(var i = 0; i < allasosur.length; i++) {
-          allasosur[i].textContent = "";
-          text = document.createTextNode(punktur(Object.values(data)[i][0]) + " kr.");
-          allasosur[i].appendChild(text);
-        }
-      })
-      .catch((error) =>
-        console.error("Unable to fetch data:", error));
+    //     for(var i = 0; i < allasosur.length; i++) {
+    //       allasosur[i].textContent = "";
+    //       text = document.createTextNode(punktur(Object.values(data)[i][0]) + " kr.");
+    //       allasosur[i].appendChild(text);
+    //     }
+    //   })
+    //   .catch((error) =>
+    //     console.error("Unable to fetch data:", error));
 
 
 
