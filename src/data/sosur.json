@@ -4,10 +4,10 @@
   "OM014" : [350, "Chili majó"],
   "O001" : [315, "Kokteilsósa"],
   "OM021" : [150, "Tómatsósa"],
-  "OM022" : [300, "Majónes"],
   "OM023" : [350, "Caesar dressing"],
   "OM007" : [530, "Bernaise sósa"],
   "OM024" : [350, "Buffalo sósa"],
   "OM019" : [315, "Olsen sósa"],
-  "OM020" : [350, "Mangó sósa"]
+  "OM020" : [350, "Mangó sósa"],
+  "OM022" : [300, "Majónes"]
 }
