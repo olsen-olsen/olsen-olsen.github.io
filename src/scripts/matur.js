@@ -212,8 +212,8 @@ const doigia = (() => {
     fetch("https://olsenolsen.is/src/data/salat.json" || "http://localhost:3000/src/data/salat.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Salat");
-        console.log(data);
+        // console.log("Salat");
+        // console.log(data);
         // console.log(items_batur[0]);
         // console.log(items_batur[0].children[1].children[0]);
         // console.log(items_batur[0].children[1].children[1]);
@@ -320,19 +320,19 @@ const doigia = (() => {
     fetch("https://olsenolsen.is/src/data/medlaeti.json" || "http://localhost:3000/src/data/medlaeti.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log("meðlæti")
-        console.log(data);
-        console.log(window.location.href);
-        console.log(typeof window.location.href);
-        console.log(window.location.href === "http://localhost:3000/matsedill.html");
+        // console.log("meðlæti")
+        // console.log(data);
+        // console.log(window.location.href);
+        // console.log(typeof window.location.href);
+        // console.log(window.location.href === "http://localhost:3000/matsedill.html");
 
         // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
         if(window.location.href === "https://olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");
-          console.log("here");
-          console.log(items_replace);
-          console.log(Object.values(data)[0][0]);
+          // console.log("here");
+          // console.log(items_replace);
+          // console.log(Object.values(data)[0][0]);
           items_replace.textContent = "Lítill: " + punktur(Object.values(data)[0][0]) + " kr. Stór: " + punktur(Object.values(data)[1][0]) + " kr.";
 
           // krullu franskar
