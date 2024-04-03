@@ -236,21 +236,46 @@ const doigia = (() => {
         // console.log(salat.children[1]);
         // console.log(salat.children[1].children[2]);
 
-        // set var i = 1 because the first child i=0 is the menu title
-        for(var i=1; i < salat.children.length; i++){
 
-          // items_salat >  verd_storoglitill > verd_litill
-          salat.children[i].children[2].children[j].textContent = "";
-          text = document.createTextNode("Verð Lítið: " + punktur(Object.values(data)[z][0]) + " kr. ");
-          salat.children[i].children[2].children[j].appendChild(text);
+        // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
+        if(window.location.href === "https:olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
+          // set var i = 1 because the first child i=0 is the menu title
+          for(var i=1; i < salat.children.length; i++){
 
-          z++;
-          // items_salat >  verd_storoglitill > verd_stor
-          salat.children[i].children[2].children[j+1].textContent = "";
-          text = document.createTextNode("Verð Stórt: " + punktur(Object.values(data)[z][0]) + " kr.");
-          salat.children[i].children[2].children[j+1].appendChild(text);
-          z++;
+            // items_salat >  verd_storoglitill > verd_litill
+            salat.children[i].children[2].children[j].textContent = "";
+            text = document.createTextNode("Verð Lítið: " + punktur(Object.values(data)[z][0]) + " kr. ");
+            salat.children[i].children[2].children[j].appendChild(text);
+
+            z++;
+            // items_salat >  verd_storoglitill > verd_stor
+            salat.children[i].children[2].children[j+1].textContent = "";
+            text = document.createTextNode("Verð Stórt: " + punktur(Object.values(data)[z][0]) + " kr.");
+            salat.children[i].children[2].children[j+1].appendChild(text);
+            z++;
+          }
         }
+        // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
+        else if(window.location.href === "https:olsenolsen.is/enskumatsedill.html" || window.location.href === "http://localhost:3000/enskumatsedill.html") {
+          // set var i = 1 because the first child i=0 is the menu title
+          for(var i=1; i < salat.children.length; i++){
+
+            // items_salat >  verd_storoglitill > verd_litill
+            salat.children[i].children[2].children[j].textContent = "";
+            text = document.createTextNode("Small Salad: " + punktur(Object.values(data)[z][0]) + " kr. ");
+            salat.children[i].children[2].children[j].appendChild(text);
+
+            z++;
+            // items_salat >  verd_storoglitill > verd_stor
+            salat.children[i].children[2].children[j+1].textContent = "";
+            text = document.createTextNode("Big Salad: " + punktur(Object.values(data)[z][0]) + " kr.");
+            salat.children[i].children[2].children[j+1].appendChild(text);
+            z++;
+          }
+
+        }
+
+
 
       })
       .catch((error) =>
@@ -287,7 +312,7 @@ const doigia = (() => {
         console.log(window.location.href);
 
         // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
-        if(window.location.href === "https:olsenolsen.is/matsedill.html") {
+        if(window.location.href === "https:olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
         // if(window.location.href === "http://localhost:3000/matsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");
@@ -313,7 +338,7 @@ const doigia = (() => {
 
         }
         // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
-        else if(window.location.href === "https:olsenolsen.is/enskumatsedill.html") {
+        else if(window.location.href === "https:olsenolsen.is/enskumatsedill.html" || window.location.href === "http://localhost:3000/enskumatsedill.html") {
         // else if(window.location.href === "http://localhost:3000/enskumatsedill.html") {
           // franskar
           items_replace = document.querySelector(".franskar > .verd");

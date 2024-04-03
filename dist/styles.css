@@ -104,6 +104,13 @@ html { /* stylelint-disable-line */
 .container_items.batar_left .lysing {
   font-size: 1rem;
 }
+.container .tilkyningu_texti {
+  font-size: 1.5em;
+  text-align: center;
+  -webkit-animation: rainbow 5s infinite;
+  -ms-animation: rainbow 5s infinite;
+  animation: rainbow 8s infinite;
+}
 .container .olsen_image {
   width: 100%;
   padding: 20px 0 20px 0;
@@ -201,6 +208,95 @@ html { /* stylelint-disable-line */
 
 /* Tilkynninga_texti */
 /* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: cadetblue;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: deeppink;
+  }
+  90% {
+    color: dodgerblue;
+  }
+  100% {
+    color: orange;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: cadetblue;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: deeppink;
+  }
+  90% {
+    color: dodgerblue;
+  }
+  100% {
+    color: orange;
+  }
+}
+/* Standar Syntax */
+@keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: cadetblue;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: deeppink;
+  }
+  90% {
+    color: dodgerblue;
+  }
+  100% {
+    color: orange;
+  }
+}
 .footer_content {
   display: flex;
   flex-direction: column;
