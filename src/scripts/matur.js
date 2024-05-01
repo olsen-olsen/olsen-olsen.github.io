@@ -404,9 +404,9 @@ const doigia = (() => {
     fetch("https://olsenolsen.is/src/data/sosur.json" || "http://localhost:3000/src/data/sosur.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        console.log(allasosur.length);
-        console.log(allasosur[1]);
+        // console.log(data);
+        // console.log(allasosur.length);
+        // console.log(allasosur[1]);
 
         for(var i = 0; i < allasosur.length; i++) {
           allasosur[i].textContent = "";
