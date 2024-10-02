@@ -269,6 +269,7 @@ const doigia = (() => {
             text = document.createTextNode("Verð Stórt: " + punktur(Object.values(data)[z][0]) + " kr.");
             salat.children[i].children[2].children[j+1].appendChild(text);
             z++;
+
           }
         }
         // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
