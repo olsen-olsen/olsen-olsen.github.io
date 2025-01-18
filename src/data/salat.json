@@ -1,8 +1,4 @@
 {
-  "salat001" : [2780, "Olsen Salat Lítið"],
-  "salat002" : [3260, "Olsen Salat Stórt"],
-  "salat003" : [2780, "Caesar Salat Lítið"],
-  "salat004" : [3260, "Caesar Salat Stórt"],
-  // "salat005" : [2780, "Salsa Salat Lítið"],
-  // "salat006" : [3260, "Salsa Salat Stórt"]
+  "salat002" : [3260, "Olsen Salat"],
+  "salat004" : [3260, "Caesar Salat"]
 }

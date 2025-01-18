@@ -254,43 +254,58 @@ const doigia = (() => {
         // 3 2 0 4
         // 3 2 1 5
 
-
+        // var a = document.querySelector(".menu_list.salat")
+        // a.children[1].children[2].children[0].textContent
+        // a.children[2].children[2].children[0].textContent
 
         // cai nay chi cho phep neu la matsedill.html vi la tieng bang dao
         if(window.location.href === "https://olsenolsen.is/matsedill.html" || window.location.href === "http://localhost:3000/matsedill.html") {
-          for(var i=1; i < salat.children.length; i++){
-
-            salat.children[i].children[2].children[j].textContent = "";
-            text = document.createTextNode("Verð Lítið: " + punktur(Object.values(data)[z][0]) + " kr. ");
-            salat.children[i].children[2].children[j].appendChild(text);
-
+          for(var i=1; i < salat.children.length; i++) {
+            salat.children[i].children[2].children[0].textContent = "";
+            text = document.createTextNode("" + punktur(Object.values(data)[z][0]) + "kr. ");
+            salat.children[i].children[2].children[0].appendChild(text);
             z++;
-            salat.children[i].children[2].children[j+1].textContent = "";
-            text = document.createTextNode("Verð Stórt: " + punktur(Object.values(data)[z][0]) + " kr.");
-            salat.children[i].children[2].children[j+1].appendChild(text);
-            z++;
-
           }
+
+          // ef meira en 1 stærð er þá notum þetta hér að neðan
+          // for(var i=1; i < salat.children.length; i++){
+
+          //   salat.children[i].children[2].children[j].textContent = "";
+          //   text = document.createTextNode("Verð Lítið: " + punktur(Object.values(data)[z][0]) + " kr. ");
+          //   salat.children[i].children[2].children[j].appendChild(text);
+
+          //   z++;
+          //   salat.children[i].children[2].children[j+1].textContent = "";
+          //   text = document.createTextNode("Verð Stórt: " + punktur(Object.values(data)[z][0]) + " kr.");
+          //   salat.children[i].children[2].children[j+1].appendChild(text);
+          //   z++;
+
+          // }
         }
         // cai nay chi cho phep neu la enskumatsedill.html vi la tieng anh
         else if(window.location.href === "https://olsenolsen.is/enskumatsedill.html" || window.location.href === "http://localhost:3000/enskumatsedill.html") {
-          for(var i=1; i < salat.children.length; i++){
-
-            salat.children[i].children[2].children[j].textContent = "";
-            text = document.createTextNode("Small Salad: " + punktur(Object.values(data)[z][0]) + " kr. ");
-            salat.children[i].children[2].children[j].appendChild(text);
-
-            z++;
-            salat.children[i].children[2].children[j+1].textContent = "";
-            text = document.createTextNode("Big Salad: " + punktur(Object.values(data)[z][0]) + " kr.");
-            salat.children[i].children[2].children[j+1].appendChild(text);
+          for(var i=1; i < salat.children.length; i++) {
+            salat.children[i].children[2].children[0].textContent = "";
+            text = document.createTextNode("" + punktur(Object.values(data)[z][0]) + "kr. ");
+            salat.children[i].children[2].children[0].appendChild(text);
             z++;
           }
-
         }
 
+        //   for(var i=1; i < salat.children.length; i++){
 
+        //     salat.children[i].children[2].children[j].textContent = "";
+        //     text = document.createTextNode("Small Salad: " + punktur(Object.values(data)[z][0]) + " kr. ");
+        //     salat.children[i].children[2].children[j].appendChild(text);
 
+        //     z++;
+        //     salat.children[i].children[2].children[j+1].textContent = "";
+        //     text = document.createTextNode("Big Salad: " + punktur(Object.values(data)[z][0]) + " kr.");
+        //     salat.children[i].children[2].children[j+1].appendChild(text);
+        //     z++;
+        //   }
+
+        // }
       })
       .catch((error) =>
         console.error("Unable to fetch data:", error));

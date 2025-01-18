@@ -2,8 +2,9 @@
   "name": "vefsidu",
   "version": "1.0.0",
   "dependencies": {
-    "browser-sync": "^2.26.14",
-    "sass": "^1.32.8"
+    "browser-sync": "",
+    "package.json": "^2.0.1",
+    "sass": ""
   },
   "devDependencies": {
     "stylelint": "^13.11.0",
