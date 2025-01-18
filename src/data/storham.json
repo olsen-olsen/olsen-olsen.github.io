@@ -1,7 +1,7 @@
 {
-  "OH010" : [3360, "Jumpin Jack"],
-  "OH011" : [3760, "Sticky Fingers"],
-  "OH012" : [3360, "Route 66"],
-  "OH013" : [3860, "Country Honk"],
-  "OH014" : [3650, "Rock Off"]
+  "OH010" : [3460, "Jumpin Jack"],
+  "OH011" : [3860, "Sticky Fingers"],
+  "OH012" : [3460, "Route 66"],
+  "OH013" : [3960, "Country Honk"],
+  "OH014" : [3750, "Rock Off"]
 }
