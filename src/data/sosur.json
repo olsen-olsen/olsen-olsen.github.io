@@ -1,13 +1,13 @@
 {
-  "OM015" : [390, "BBQ sósa"],
-  "OM013" : [390, "Ranch sósa"],
-  "OM014" : [390, "Chili majó"],
-  "O001" : [390, "Kokteilsósa"],
+  "OM015" : [400, "BBQ sósa"],
+  "OM013" : [400, "Ranch sósa"],
+  "OM014" : [400, "Chili majó"],
+  "O001" : [400, "Kokteilsósa"],
   "OM021" : [250, "Tómatsósa"],
-  "OM022" : [390, "Caesar dressing"],
-  "OM023" : [390, "Bernaise sósa"],
-  "OM007" : [550, "Buffalo sósa"],
-  "OM024" : [550, "Olsen sósa"],
-  "OM019" : [390, "Mangó sósa"],
-  "OM020" : [390, "Majónes"]
+  "OM022" : [400, "Caesar dressing"],
+  "OM023" : [550, "Bernaise sósa"],
+  "OM007" : [450, "Buffalo sósa"],
+  "OM024" : [400, "Olsen sósa"],
+  "OM019" : [400, "Mangó sósa"],
+  "OM020" : [400, "Majónes"]
 }
