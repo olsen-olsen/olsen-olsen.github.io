@@ -1,0 +1,15 @@
+#+title: Wolt
+* Matseðill
+** Hamborgarar
+*** Ostborgari
+- Lýsing: 140gr. borgari, káli, gúrku, tómötum, osti, spes sósu.
+- Verð: 2.030 kr
+*** BBQ Borgari
+- Lýsing: 140gr. borgari, káli, tómötum, gúrku, BBQ sósu, osti, spes sósu.
+- Verð: 2.030 kr
+*** Beikon Borgari
+- Lýsing: 140gr. borgari, káli, gúrku, tómötum, osti, beikon, spes sósu.
+- Verð: 2.350 kr.
+*** Beikon Egg Borgari
+- Lýsing: 140gr. borgari, beikon, káli, gúrku, tómötum, osti og eggi.
+- Verð: 2.450 kr.

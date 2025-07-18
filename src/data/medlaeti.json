@@ -12,11 +12,11 @@
   "OM006" : [1995, "Sæta 1/1"],
   "OM009" : [850, "Laukhringir Lítill"],
   "OM003" : [1340, "Laukhringir Stór"],
-  "OM026" : [1850, "Ostastangir"],
-  "OM027" : [2050, "Jalapeno Ostabombur"],
+  "OM026" : [2050, "Ostastangir"],
+  "OM027" : [2250, "Jalapeno Ostabombur"],
   "OM028" : [2980, "Kjúklingalundir"],
-  "OM029" : [2490, "Buffalo Vængir"],
-  "OM030" : [2490, "Buffalo Naggar"],
-  "OM031" : [2490, "Tempura Rækjur"],
-  "OM032" : [2360, "Blómkálsvængir"]
+  "OM029" : [2590, "Buffalo Vængir"],
+  "OM030" : [2590, "Buffalo Naggar"],
+  "OM031" : [2590, "Tempura Rækjur"],
+  "OM032" : [2490, "Blómkálsvængir"]
 }
