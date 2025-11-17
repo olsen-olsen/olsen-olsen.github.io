@@ -1,8 +1,8 @@
 {
-  "SAF001" : [9895, "Nautasteikur"],
-  "SAF002" : [5295, "Steik & egg"],
-  "SAF003" : [4895, "Enskt Buffsteik"],
-  "SAF004" : [4795, "Lambasteikur"],
-  "SAF005" : [3495, "Fiskur í Orlý"],
-  "SAF006" : [3795, "Gratíneraður Fiksur"]
+  "SAF001" : [5295, "Nautasteikur"],
+  "SAF002" : [5695, "Steik & egg"],
+  "SAF003" : [5295, "Enskt Buffsteik"],
+  "SAF004" : [5195, "Lambasteikur"],
+  "SAF005" : [3695, "Fiskur í Orlý"],
+  "SAF006" : [4195, "Gratíneraður Fiksur"]
 }

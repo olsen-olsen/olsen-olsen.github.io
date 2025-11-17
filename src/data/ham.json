@@ -1,11 +1,11 @@
 {
-  "OH001" : [1930, "Ostborgari"],
-  "OH002" : [1930, "BBQ borgari"],
-  "OH003" : [2250, "Beikon borgari"],
-  "OH004" : [2450, "Beikon egg borgari"],
-  "OH005" : [2250, "Olsen borgari"],
-  "OH006" : [2295, "Olsen Spes borgari"],
-  "OH007" : [1985, "Kjúklingaborgari"],
-  "OH008" : [2150, "Kjúklingaborgara Southern Fried"],
-  "OH009" : [1950, "Vegan borgari"]
+  "OH001" : [2030, "Ostborgari"],
+  "OH002" : [2030, "BBQ borgari"],
+  "OH003" : [2350, "Beikon borgari"],
+  "OH004" : [2550, "Beikon egg borgari"],
+  "OH005" : [2350, "Olsen borgari"],
+  "OH006" : [2395, "Olsen Spes borgari"],
+  "OH007" : [2085, "Kjúklingaborgari"],
+  "OH008" : [2250, "Kjúklingaborgara Southern Fried"],
+  "OH009" : [2050, "Vegan borgari"]
 }
